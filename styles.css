@@ -199,6 +199,7 @@ nav a:link {
     font-weight: 300;
     line-height: normal;
     letter-spacing: 2px;
+    cursor: pointer;
     border: 0;
     margin-top: 75px;
 }
@@ -288,7 +289,7 @@ section {
 
 .visiting-container .card-image-wrapper {
     width: 100%;
-    height: 285px;
+    max-height: 285px;
     margin-bottom: 25px;
 }
 
@@ -312,7 +313,7 @@ section {
 
 .visiting-container .card hr {
     height: 2px;
-    width: 300px;
+    max-width: 300px;
     background-color: #710707;
     margin-top: 10px;
 }
@@ -389,8 +390,8 @@ section {
 }
 
 .explore-container .image-block {
-    width: 720px;
-    height: 700px;
+    max-width: 720px;
+    max-height: 700px;
     margin-left: 60px;
     margin-top: 15px;
 }
@@ -458,4 +459,21 @@ section {
 
 .video .video-block {
     margin-top: 75px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 650px;
+}
+
+.video .v-container div:last-of-type {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.video .v-container div:last-of-type iframe {
+    max-height: 254px;
+    max-width: 452px;
 }
