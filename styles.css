@@ -267,6 +267,7 @@ section.visiting {
 }
 
 .visiting-container hr {
+    border: none;
     height: 3px;
     background-color: #710707; /* чёрная линия */
     margin: 20px 0;
@@ -283,8 +284,7 @@ section.visiting {
 }
 
 .visiting-container .card{
-    width: 31%;
-    flex-grow: 1;
+    width: 440px;
 }
 
 .visiting-container .card-image-wrapper {
@@ -303,7 +303,7 @@ section.visiting {
 .visiting-container h3 {
     color: #000;
     font-family: Forum;
-    font-size: 30px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -334,4 +334,88 @@ section.visiting {
     font-style: normal;
     font-weight: 200;
     line-height: normal;
+}
+
+
+/* EXPLORE SECTION */
+.explore {
+    display: flex;
+    justify-content: center;
+    background: #030303;
+}
+
+.explore-container {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 74px 0;
+}
+
+.explore-container h2 {
+    color: #FFF;
+    font-family: Forum;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.explore-container hr {
+    border: none;
+    height: 3px;
+    background-color: #710707; /* чёрная линия */
+    margin-bottom: 75px;
+}
+
+.explore-container p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38.5px; /* 175% */
+    margin-bottom: 25px;
+}
+
+.explore-container span {
+    color: #CAAA7D;
+}
+
+.explore-container .text-block {
+    width: 40%;
+    flex-grow: 1;
+}
+
+.explore-container .image-block {
+    width: 720px;
+    height: 700px;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+
+.explore-container .before-after {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.explore-container .before-wrapper {
+    background: url("assets/before.jpg") no-repeat top left;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 60%; /* половина "до" */
+    height: 100%;
+    overflow: hidden;
+}
+
+.explore-container .handler {
+    position: absolute;
+    top: 0;
+    left: 57%;
+    z-index: 10;
 }
