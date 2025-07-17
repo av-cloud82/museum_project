@@ -252,7 +252,6 @@ section.visiting {
     width: 1440px;
     display: flex;
     flex-direction: column;
-    border: solid 2px #710707;
     margin: 75px 0;
 }
 
