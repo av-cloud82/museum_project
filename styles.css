@@ -71,7 +71,7 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-header {
+header, .welcome {
     background-color: black;
     display: flex;
     justify-content: center;
@@ -83,6 +83,30 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo svg {
+    width: 49px;
+    height: 26px;
+    flex-shrink: 0;
+    margin-right: 25px;
+}
+
+.logo-text {
+    color: #FFF;
+    font-family: Forum;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 .header-nav {
@@ -108,4 +132,29 @@ nav ul li {
     font-weight: 200;
     line-height: normal;
     letter-spacing: 2px;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.welcome-container {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text-block {
+    width: 598px;
+    flex-shrink: 0;
+}
+
+.hero-text-block p {
+    color: #FFF;
+}
+
+h1 {
+    color: #FFF;
 }
