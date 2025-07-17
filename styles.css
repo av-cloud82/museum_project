@@ -144,7 +144,6 @@ nav a:link {
 .welcome-container {
     width: 1440px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding-bottom: 60px;
 }
@@ -153,6 +152,7 @@ nav a:link {
     width: 50%;
     flex-shrink: 0;
     margin-right: -100px;
+    margin-top: 150px;
     z-index: 10;
 }
 
@@ -173,7 +173,7 @@ nav a:link {
     line-height: 90px; /* 112.5% */
     letter-spacing: 5px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .hero-text-block p {
@@ -200,12 +200,12 @@ nav a:link {
     line-height: normal;
     letter-spacing: 2px;
     border: 0;
-    margin-top: 90px;
+    margin-top: 75px;
 }
 
 .hero-image-block {
-    width: 750px;
-    height: 800px;
+    width: 1000px;
+    height: 750px;
     background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url("assets/1.jpg");
     background-position: 50%;
     background-size: cover;
@@ -220,7 +220,7 @@ nav a:link {
     display: flex;
     align-items: center;
     z-index: 10;
-    padding: 40px 60px;
+    padding: 40px 75px;
     margin-bottom: -60px;
     background: #030303;
 }
@@ -240,13 +240,12 @@ nav a:link {
     margin: 0 60px;
 }
 
-
-/* WELCOME SECTION */
-
-section.visiting {
+section {
     display: flex;
     justify-content: center;
 }
+
+/* WELCOME SECTION */
 
 .visiting-container {
     width: 1440px;
@@ -349,7 +348,7 @@ section.visiting {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 74px 0;
+    padding: 75px 0;
 }
 
 .explore-container h2 {
@@ -418,4 +417,45 @@ section.visiting {
     top: 0;
     left: 57%;
     z-index: 10;
+}
+
+
+/* VIDEO SECTION */
+
+.v-container {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 75px 0;
+}
+
+.video .text-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.video h2 {
+    color: #9D8665;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.video p {
+    width: 720px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38.5px; /* 175% */
+}
+
+.video .video-block {
+    margin-top: 75px;
 }
