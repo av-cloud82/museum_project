@@ -535,3 +535,103 @@ section {
     z-index: 20;
     pointer-events: none;
 }
+
+
+/* SECTION TICKETS */
+
+.tickets h2 {
+    color: #9D8665;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.tickets hr {
+    border: none;
+    height: 3px;
+    width: 100%;
+    background-color: #710707;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+.tickets h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.tickets p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.tickets .v-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tickets .map-block {
+    width: 960px;
+    height: 620px;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #030303;
+    padding-top: 86px;
+}
+
+footer .h-container {
+    width: 1440px;
+    height: 392px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+footer .footer-logo svg,
+footer .footer-logo .logo-text {
+    display: inline;
+}
+
+footer .footer-logo .logo-text {
+    margin-left: 25px;
+}
+
+footer .footer-menu {
+    width: 363px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 145px;
+}
+
+footer .footer-menu ul {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 2px;
+    list-style: none;
+    margin: 0;
+}
+
+footer .footer-menu ul li:not(:last-of-type) {
+    margin-bottom: 25px;
+}
