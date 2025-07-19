@@ -49,25 +49,21 @@ a:not([class]) {
   color: currentColor;
 }
 
-/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input, button,
 textarea, select {
   font: inherit;
 }
 
-/* Make sure textarea without a rows attribute are not tiny */
 textarea:not([rows]) {
   min-height: 10em;
 }
 
-/* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
 }
@@ -142,6 +138,7 @@ nav a:link {
 }
 
 
+
 /* HERO SECTION */
 
 .welcome-container {
@@ -173,7 +170,7 @@ nav a:link {
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
-    line-height: 90px; /* 112.5% */
+    line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -236,7 +233,7 @@ nav a:link {
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 181.818% */
+    line-height: 40px;
     text-transform: uppercase;
 }
 
@@ -253,6 +250,8 @@ section {
     background-color: black;
 }
 
+
+
 /* WELCOME SECTION */
 
 .visiting-container {
@@ -268,7 +267,7 @@ section {
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
-    line-height: 90px; /* 112.5% */
+    line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -364,7 +363,7 @@ section {
     font-family: Forum;
     font-size: 80px;
     font-weight: 400;
-    line-height: 90px; /* 112.5% */
+    line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -383,7 +382,7 @@ section {
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
-    line-height: 38.5px; /* 175% */
+    line-height: 38.5px;
     margin-bottom: 25px;
 }
 
@@ -449,7 +448,7 @@ section {
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
-    line-height: 90px; /* 112.5% */
+    line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -461,7 +460,7 @@ section {
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
-    line-height: 38.5px; /* 175% */
+    line-height: 38.5px;
 }
 
 .video .video-block {
@@ -503,7 +502,7 @@ section {
     font-family: Forum;
     font-size: 80px;
     font-weight: 400;
-    line-height: 90px; /* 112.5% */
+    line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 75px;
@@ -539,7 +538,7 @@ section {
 
 /* SECTION TICKETS */
 
-.tickets h2 {
+.contacts h2 {
     color: #9D8665;
     font-family: Forum;
     font-size: 80px;
@@ -550,7 +549,7 @@ section {
     text-transform: uppercase;
 }
 
-.tickets hr {
+.contacts hr {
     border: none;
     height: 3px;
     width: 100%;
@@ -559,7 +558,7 @@ section {
     margin-bottom: 75px;
 }
 
-.tickets h3 {
+.contacts h3 {
     color: #000;
     font-family: Roboto;
     font-size: 28px;
@@ -567,7 +566,7 @@ section {
     margin-bottom: 50px;
 }
 
-.tickets p {
+.contacts p {
     color: #000;
     font-family: Roboto;
     font-size: 22px;
@@ -575,13 +574,13 @@ section {
     margin-bottom: 25px;
 }
 
-.tickets .v-container > div {
+.contacts .v-container > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.tickets .map-block {
+.contacts .map-block {
     width: 960px;
     height: 620px;
 }
