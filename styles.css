@@ -276,7 +276,7 @@ section {
 .visiting-container hr {
     border: none;
     height: 3px;
-    background-color: #710707; /* чёрная линия */
+    background-color: #710707;
     margin: 20px 0;
 }
 
@@ -373,7 +373,7 @@ section {
 .explore-container hr {
     border: none;
     height: 3px;
-    background-color: #710707; /* чёрная линия */
+    background-color: #710707;
     margin-bottom: 75px;
 }
 
@@ -415,7 +415,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;    
-    width: 60%; /* половина "до" */
+    width: 60%;
     height: 100%;
     overflow: hidden;
 }
@@ -598,7 +598,6 @@ footer {
 
 footer .h-container {
     width: 1440px;
-    height: 392px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -634,4 +633,52 @@ footer .footer-menu ul {
 
 footer .footer-menu ul li:not(:last-of-type) {
     margin-bottom: 25px;
+}
+
+footer .social {
+    display: flex;
+    width: 340px;
+    margin-left: auto;
+    align-self: end;
+    margin-bottom: 5px;
+}
+
+footer .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 50px;
+}
+
+footer .icon:not(:last-of-type) {
+    margin-right: 25px;
+}
+
+footer hr {
+    border: none;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    margin: 50px 0;
+}
+
+footer .copyright {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1440px;
+    margin-bottom: 52px;
+}
+
+footer .copyright p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 22px;
+    letter-spacing: 2px;
 }
