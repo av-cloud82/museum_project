@@ -536,6 +536,121 @@ section {
 }
 
 
+
+/* TICKETS SECTION */
+
+.tickets h2 {
+    color: #9D8665;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.tickets hr {
+    border: none;
+    height: 3px;
+    width: 100%;
+    background-color: #710707;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+.tickets .v-container > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 60px;
+}
+
+.tickets .img-block {
+    width: 720px;
+    height: 550px;
+}
+
+.tickets .form-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.tickets .radio-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.tickets .form-block h4 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tickets .radio-input h4 {
+    margin-bottom: 50px;
+}
+
+.tickets .number-input h4 {
+    margin-bottom: 25px;
+}
+
+.tickets .form-block label {
+    color: #000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.tickets .radio-input label {
+    margin-bottom: 25px;
+}
+
+.tickets .number-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.tickets .radio-input label {
+    margin-bottom: 21px;
+}
+
+.tickets .number-input button {
+    width: 175px;
+    height: 50px;
+}
+
+.tickets .number-input .total {
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.65px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.tickets .number-input button {
+    width: 175px;
+    height: 50px;
+    border-radius: 2px;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
 /* SECTION TICKETS */
 
 .contacts h2 {
