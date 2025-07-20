@@ -960,11 +960,13 @@ footer .social ul .icon {
     height: 48px;
     border: 1px solid rgb(102, 102, 102);
     border-radius: 50px;
-    transition: border-color 0.4s;
+    transition: all 0.4s;
+    /* transition: box-shadow 0.4s ease; */
 }
 
 footer .social ul .icon:hover {
     border-color: #9D8665;
+    box-shadow: 0 0 0 1px #9D8665;
 }
 
 footer .social li a {
