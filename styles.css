@@ -11,6 +11,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  scroll-behavior: smooth;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -67,6 +68,35 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+
+a:link {
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+a:link:hover,
+a:link:active,
+a:visited:hover {
+    color: #9D8665!important;
+}
+
+
+
+/* HOVER STYLES */
+
+.button-hover:hover {
+    background: #9D8665!important;
+    border: none;
+}
+
+.text-hover:hover {
+    color: #9D8665!important;;
+}
+
 
 
 /* HEADER SECTION */
@@ -133,9 +163,6 @@ nav ul li {
     letter-spacing: 2px;
 }
 
-nav a:link {
-    text-decoration: none;
-}
 
 
 
@@ -162,10 +189,6 @@ nav a:link {
 
 .hero-text-block h1 {
     color: #FFF;
-}
-
-.hero-text-block h1 {
-    color: #FFF;
     font-family: Forum;
     font-size: 80px;
     font-style: normal;
@@ -174,6 +197,8 @@ nav a:link {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 25px;
+    cursor: default;
+    transition: color 0.3s;
 }
 
 .hero-text-block p {
@@ -202,6 +227,7 @@ nav a:link {
     cursor: pointer;
     border: 0;
     margin-top: 75px;
+    transition: background 0.3s;
 }
 
 .hero-image-block {
@@ -322,6 +348,11 @@ section {
     max-width: 300px;
     background-color: #710707;
     margin-top: 10px;
+    transition: max-width 0.7s;
+}
+
+.visiting-container .card .card-image-wrapper:hover ~ hr {
+    max-width: 100%;
 }
 
 .visiting-container .card p:first-of-type {
@@ -367,6 +398,8 @@ section {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 25px;
+    transition: color 0.3s;
+    cursor: default;
 }
 
 .explore-container hr {
@@ -506,6 +539,8 @@ section {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 75px;
+    cursor: default;
+    transition: color 0.3s;
 }
 
 .g-cards {
@@ -773,6 +808,7 @@ section {
     font-weight: 300;
     line-height: normal;
     letter-spacing: 2px;
+    transition: background 0.3s;
 }
 
 
@@ -814,7 +850,7 @@ section {
     margin-bottom: 75px;
 }
 
-.contacts h3 {
+.contacts h4 {
     color: #000;
     font-family: Roboto;
     font-size: 28px;
@@ -884,21 +920,39 @@ footer .footer-menu ul {
     letter-spacing: 2px;
     list-style: none;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 0;
 }
 
-footer .footer-menu ul li:not(:last-of-type) {
+footer .footer-menu ul li {
+    width: 50%;
     margin-bottom: 25px;
 }
 
+footer .footer-menu ul li:nth-of-type(5),
+footer .footer-menu ul li:last-of-type {
+    margin-bottom: 0;
+}
+
 footer .social {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+footer .social ul{
     display: flex;
     width: 340px;
-    margin-left: auto;
-    align-self: end;
     margin-bottom: 5px;
 }
 
-footer .icon {
+footer .social ul {
+    list-style: none;
+    width: 100%;
+}
+
+footer .social ul .icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -906,9 +960,19 @@ footer .icon {
     height: 48px;
     border: 1px solid rgb(102, 102, 102);
     border-radius: 50px;
+    transition: border-color 0.4s;
 }
 
-footer .icon:not(:last-of-type) {
+footer .social ul .icon:hover {
+    border-color: #9D8665;
+}
+
+footer .social li a {
+    line-height: 0;
+    display: block;
+}
+
+footer .social ul li:not(:last-of-type) {
     margin-right: 25px;
 }
 
