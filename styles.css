@@ -176,11 +176,12 @@ nav ul li {
 }
 
 .hero-text-block {
-    width: 50%;
+    width: 45%;
     flex-shrink: 0;
-    margin-right: -100px;
+    margin-right: -250px;
     margin-top: 150px;
     z-index: 10;
+    position: relative;
 }
 
 .hero-text-block p {
@@ -233,9 +234,9 @@ nav ul li {
 .hero-image-block {
     width: 1000px;
     height: 750px;
-    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url("assets/1.jpg");
-    background-position: 50%;
-    background-size: cover;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url("assets/1.jpg");
+    background-size: auto, cover;
+    background-position: left top, right center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
@@ -263,8 +264,17 @@ nav ul li {
     text-transform: uppercase;
 }
 
+.hero-image-nav p span:first-of-type {
+    margin-right: 5px;
+}
+
+.hero-image-nav p span:last-of-type {
+    margin-left: 5px;
+}
+
 .hero-image-nav .nav-points {
-    margin: 0 60px;
+    margin-left: 55px;
+    margin-right: 60px;
 }
 
 section {
@@ -301,8 +311,10 @@ section {
 .visiting-container hr {
     border: none;
     height: 3px;
+    width: 100%;
     background-color: #710707;
-    margin: 20px 0;
+    margin-top: 25px;
+    margin-bottom: 75px;
 }
 
 .v-cards {
@@ -312,7 +324,6 @@ section {
     justify-content: space-between;
     column-gap: 30px;
     row-gap: 75px;
-    margin-top: 75px;
 }
 
 .visiting-container .card{
@@ -348,7 +359,10 @@ section {
     max-width: 300px;
     background-color: #710707;
     margin-top: 10px;
+    margin-left: 0;
+    margin-right: auto;
     transition: max-width 0.7s;
+    margin-bottom: 10px;
 }
 
 .visiting-container .card .card-image-wrapper:hover ~ hr {
@@ -455,7 +469,7 @@ section {
 .explore-container .handler {
     position: absolute;
     top: 0;
-    left: 57%;
+    left: 58%;
     z-index: 10;
 }
 
@@ -467,6 +481,7 @@ section {
     display: flex;
     flex-direction: column;
     padding: 75px 0;
+    row-gap: 0;
 }
 
 .video .text-block {
@@ -494,27 +509,34 @@ section {
     font-style: normal;
     font-weight: 300;
     line-height: 38.5px;
+    margin-top: 10px;
 }
 
 .video .video-block {
     margin-top: 75px;
 }
 
-.video iframe {
+.video .video-block iframe {
     width: 100%;
-    height: 650px;
+    height: 735px;
 }
 
-.video .v-container div:last-of-type {
+.video .v-container .video-row {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 35px;
     justify-content: space-between;
 }
 
-.video .v-container div:last-of-type iframe {
+.video .v-container .video-row iframe {
     max-height: 254px;
     max-width: 452px;
+}
+
+.video .video-dots {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -545,7 +567,7 @@ section {
 
 .g-cards {
     column-count: 3;
-    column-gap: 24px;
+    column-gap: 35px;
 }
 
 .g-cards div {
@@ -648,8 +670,8 @@ section {
 .tickets .radio-input .radio-container {
     display: block;
     position: relative;
-    padding-left: 35px;
-    margin-bottom: 25px;
+    padding-left: 40px;
+    margin-bottom: 27px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -734,17 +756,18 @@ section {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: solid 2px black;
+    border: solid 3px black;
     height: 50px;
     width: 150px;
     margin-top: 15px;
-    padding: 0 10px;
+    padding-left: 0;
+    padding-right: 10px;
 }
 
 .tickets .number-input .value-control {
     width: 20px;
     height: 20px;
-    margin: 0 8px;
+    margin: 0 5px;
     background: transparent;
     border: none;
     color: #3b3b3b;
@@ -759,7 +782,7 @@ section {
 }
 
 .tickets .number-input .value-input {
-    margin: 0;
+    margin-left: 5px;
     border: none;
     padding: 2px 8px;
     text-align: center;
@@ -855,7 +878,12 @@ section {
     font-family: Roboto;
     font-size: 28px;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-top: 3px;
+    margin-bottom: 48px;
+}
+
+.contacts h4 span {
+    display: block;
 }
 
 .contacts p {
@@ -863,7 +891,7 @@ section {
     font-family: Roboto;
     font-size: 22px;
     font-weight: 300;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 .contacts .v-container > div {
@@ -900,15 +928,15 @@ footer .footer-logo .logo-text {
 }
 
 footer .footer-logo .logo-text {
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 footer .footer-menu {
-    width: 363px;
+    width: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 145px;
+    margin-left: 140px;
 }
 
 footer .footer-menu ul {
@@ -922,12 +950,13 @@ footer .footer-menu ul {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 100%;
     gap: 0;
 }
 
 footer .footer-menu ul li {
-    width: 50%;
+    width: 48%;
     margin-bottom: 25px;
 }
 
