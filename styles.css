@@ -168,6 +168,11 @@ nav ul li {
 
 /* HERO SECTION */
 
+.welcome h1 {
+    position: absolute;
+    opacity: 0;
+}
+
 .welcome-container {
     width: 1440px;
     display: flex;
@@ -188,7 +193,7 @@ nav ul li {
     color: #FFF;
 }
 
-.hero-text-block h1 {
+.hero-text-block .hero-header {
     color: #FFF;
     font-family: Forum;
     font-size: 80px;
@@ -556,12 +561,11 @@ section {
     content: "";
     position: absolute;
     top: 50%;
-    left: 0px;
+    left: 9px;
     transform: translateY(-50%);
     height: 5px;
     width: 436px;
     background-color: #c4c4c4;
-    border-radius: 2px;
 }
 
 .video .volume-btn {
@@ -592,19 +596,18 @@ section {
     height: 5px;
     width: 60px;
     background-color: #710707;
-    border-radius: 2px;
 }
 
 .video .volume-scroll::after {
     content: "";
     position: absolute;
     top: 50%;
-    left: 0px;
+    left: 9px;
     transform: translateY(-50%);
     height: 5px;
     width: 93px;
     background-color: #c4c4c4;
-    border-radius: 2px;
+    z-index: 0;
 }
 
 .video .fullscreen-btn {
