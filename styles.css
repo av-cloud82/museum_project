@@ -370,7 +370,7 @@ section {
     margin-bottom: 10px;
 }
 
-.visiting-container .card .card-image-wrapper:hover ~ hr {
+.visiting-container .card:hover .card-image-wrapper ~ hr {
     max-width: 100%;
 }
 
@@ -521,6 +521,156 @@ section {
     margin-top: 75px;
 }
 
+.video .video-player {
+    width: 100%;
+    
+    position: relative;
+}
+
+.video .video-frame {
+    width: 100%;
+    height: 730px;
+    object-fit: cover;
+}
+
+.video .video-player img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 10;
+    opacity: 0.7;
+    display: none;
+}
+
+.video .video-player img.img {
+    display: block;
+}
+
+.video #video-controls.show {
+    display: flex;
+}
+
+.video #video-controls {
+    display: none;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85px    ;
+    flex-wrap: wrap;
+    background: #000;
+    padding: 0 30px;
+}
+
+.video .player-btn {
+    background-color: #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.video #play-pause.play {
+    background-image: url("assets/icons/play-button.svg");
+}
+
+.video #play-pause.pause {
+    background-image: url("assets/icons/pause-button.svg");
+}
+
+.video #volume-btn {
+    background-image: url("assets/icons/volume.svg");
+    margin: 0 15px;
+}
+
+.video #fullscreen {
+    background-image: url("assets/icons/fullscreen-btn.svg");
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.video #video-controls input[type="range"] {
+    -webkit-appearance: none;
+}
+
+.video #playback {
+    width: 100%;
+    max-width: 930px;
+    height: 7px;
+    margin: 0 35px;
+    border: 0px solid #B3B3B3;
+    background-color: #B3B3B3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.video #playback:hover {
+    opacity: 1;
+}
+
+.video #playback::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #710707;
+    cursor: pointer;
+}
+
+.video #playback::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #710707;
+  cursor: pointer;
+}
+
+
+.video #volume {
+    width: 100%;
+    max-width: 160px;
+    min-width: 100px;
+    height: 7px;
+    margin-left: auto;
+    margin-right: 15px;
+    border: 0px solid #B3B3B3;
+    background-color: #B3B3B3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.video #volume:hover {
+    opacity: 1;
+}
+
+.video #volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #710707;
+    cursor: pointer;
+}
+
+.video #volume::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #710707;
+  cursor: pointer;
+}
+
+/* ********************* */
 .video .player-controls {
     height: 85px;
     width: 100%;
@@ -751,7 +901,7 @@ section {
 }
 
 .tickets .radio-input h4 {
-    margin-bottom: 50px;
+    margin-bottom: 43px;
 }
 
 .tickets .number-input h4 {
@@ -771,14 +921,22 @@ section {
 .tickets .radio-input .radio-container {
     display: block;
     position: relative;
-    padding-left: 40px;
-    margin-bottom: 27px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 47px;
+    padding-right: 7px;
+    margin-bottom: 12px;
+    margin-left: -7px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.tickets .radio-input .radio-container:hover {
+    background-color: #e6e6e6;
 }
 
 /* Hide the browser's default radio button */
@@ -795,7 +953,7 @@ section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 0;
+    left: 7px;
     height: 17px;
     width: 17px;
     /* background-color: #eee; */
@@ -805,7 +963,7 @@ section {
 
 /* On mouse-over, add a grey background color */
 .tickets .radio-input .radio-container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #fff;
 }
 
 /* When the radio button is checked, add a blue background */
@@ -933,6 +1091,7 @@ section {
     line-height: normal;
     letter-spacing: 2px;
     transition: background 0.3s;
+    cursor: pointer;
 }
 
 
@@ -1097,6 +1256,43 @@ footer .social ul .icon {
 footer .social ul .icon:hover {
     border-color: #9D8665;
     box-shadow: 0 0 0 1px #9D8665;
+}
+
+footer .social ul .icon .icon-mask {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+footer .social ul .icon:hover .icon-mask {
+    background-color: #9D8665;
+}
+
+footer .social ul .icon .yt {
+    -webkit-mask: url("assets/icons/youtube.svg") no-repeat center;
+    mask: url("assets/icons/youtube.svg") no-repeat center;
+}
+
+footer .social ul .icon .insta {
+    -webkit-mask: url("assets/icons/insta.svg") no-repeat center;
+    mask: url("assets/icons/insta.svg") no-repeat center;
+}
+
+footer .social ul .icon .fb {
+    -webkit-mask: url("assets/icons/fb.svg") no-repeat center;
+    mask: url("assets/icons/fb.svg") no-repeat center;
+}
+
+footer .social ul .icon .tw {
+    -webkit-mask: url("assets/icons/twitter.svg") no-repeat center;
+    mask: url("assets/icons/twitter.svg") no-repeat center;
+}
+
+footer .social ul .icon .pt {
+    -webkit-mask: url("assets/icons/pinterest.svg") no-repeat center;
+    mask: url("assets/icons/pinterest.svg") no-repeat center;
 }
 
 footer .social li a {
