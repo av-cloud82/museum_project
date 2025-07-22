@@ -14,7 +14,14 @@ function updateGradient(slider) {
     slider.style.backgroundImage = `linear-gradient(90deg, #710707 ${percentage}%, transparent ${percentage}%)`; 
 };
 
+let playedOnce;
 function playPause(){
+    if(!playedOnce){
+        video.currentTime = 0.1;
+        playback.setAttribute("max", `${video.duration}`);
+        playedOnce = true;
+    };
+    
     if(playPauseBtn.classList.contains("play")){
         playPauseBtn.classList.remove("play");
         playPauseBtn.classList.add("pause");
@@ -29,11 +36,9 @@ function playPause(){
 };
 
 function checkVideoMeta(){
-    const duration = video.duration;
-    if(duration > 0){
+    if(video.duration > 0){
         videoControls.classList.add("show");
         playSign.classList.add("img");
-        playback.setAttribute("max", `${video.duration}`);
         volume.value = video.volume;
         updateGradient(playback);
         updateGradient(volume);
